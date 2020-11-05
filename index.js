@@ -36,8 +36,8 @@ Do the following:
   HINT: no function required
 */
 
-var ironMan = "Tony Stark"
-var batman = "Bruce Wayne"
+// var ironMan = "Tony Stark"
+// var batman = "Bruce Wayne"
 
 
 
@@ -53,6 +53,10 @@ Do the following:
 
   HINT: look up the Number method
 */
+let year = "1999";
+
+console.log(parseInt(year)); 
+
 
 
 
