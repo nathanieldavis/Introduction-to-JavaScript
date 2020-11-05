@@ -22,6 +22,10 @@ const votingAge = 20;
 if (votingAge >= 18) {
   console.log(true);
 }
+else {
+  console.log(false)
+}
+console.log(votingAge)
 
 
 
@@ -36,10 +40,13 @@ Do the following:
   HINT: no function required
 */
 
-// var ironMan = "Tony Stark"
-// var batman = "Bruce Wayne"
+var legalVotingAge = 18;
 
+var canIVote = (legalVotingAge >= 18) ? "You can Vote! " : "You can't Vote!"
 
+console.log(canIVote);
+//right = truthy left = falsy 
+//Study conditionals
 
 
 
@@ -55,10 +62,14 @@ Do the following:
 */
 
 let year = "1999";
+
+console.log(Number("1999"));
+console.log(parseInt(year)); 
+
+
+console.log(typeof(year));
 console.log(typeof(parseInt(year))); 
 
-console.log(parseInt(year)); 
-console.log(typeof(year));
 
 
 /*
@@ -107,7 +118,6 @@ Use the hungryDog function and feeding requirements below to do the following:
   3. Do the proper calculations and return the number of pounds of raw food to feed the dog/puppy in a day
   
   REMEMBER: This program should handle correctly adult AND puppy ages and weights
-  
   Feeding Requirements:
 
   Adult Dogs 1 year and older 
@@ -124,9 +134,30 @@ Use the hungryDog function and feeding requirements below to do the following:
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(/*add your code here*/){
-    /*add your code here*/
+function hungryDog(age,weight) {
+
+  if(age >= 1 && weight <= 5){
+
+    return weight * 0.05;
   }
+
+  if(age >=1 && weight >= 6 && weight <= 10){
+
+    return weight * 0.04;
+  }
+
+  if(age >=1 && weight >= 11 && weight <= 15){
+
+    return weight * 0.03;
+  }
+
+  if(age >=1 && weight > 15){
+
+    return weight * 0.02;
+  }
+}
+
+console.log(hungryDog(15, 1));
 
 
 
