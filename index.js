@@ -184,12 +184,46 @@ Use the game function below to do the following:
   
   HINT: While you can complete this with only conditionals based on strings, it may help to equate choice to a number when using Math.random()
 */
+//Computer selection 0 1 2 
+
 
 function game(user, computer){
-    /*add your code here*/
+  let computer = Math.floor(Math.random() *  3)
+
+  if(computer === 0){
+    return "rock"
+  } else if(computer === 1) {
+    return "paper"
+  }else if (computer === 2) {
+    return "scissors"
+  }
+
+  
+  if (user === "rock" && computer === "scissors"){
+    return "you win"
+  }
+  else if (user === "paper" && computer === "rock"){
+    return "you win!"
+  }
+  else if (user === "scissors" && computer === "paper"){
+    return "you win!"
+  }
+  else if (user === computer){
+    return "tie!"
+  }
+  else{
+    return "you lose!"
+  }
+  
+  if (user === "scissors" && computer === "paper"){
+    return "you lose"
+  }
+  else {
+
+  }
 }
-  
-  
+
+
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -216,9 +250,11 @@ Using the feet function below do the following:
   3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-    /*add your code here*/
+
+function convertToFeet(cm){
+    return cm / 30.48
   }
+console.log(convertToFeet(100))
 
 
 
@@ -232,9 +268,13 @@ Using the annoyingSong function below do the following:
       "(number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
-        /*add your code here*/
+
+function annoyingSong(bottles){
+      for (let i = bottles;  i > 0; i--)
+      return (`${i} bottles of soda on the wall, ${i} bottles of soda, take one down pass it around, ${i-1} bottles of soda on the wall`);
   }
+  console.log(annoyingSong(99));
+
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
