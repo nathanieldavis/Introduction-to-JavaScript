@@ -25,7 +25,7 @@ if (votingAge >= 18) {
 else {
   console.log(false)
 }
-console.log(votingAge)
+// console.log(votingAge)
 
 
 
@@ -64,11 +64,13 @@ Do the following:
 let year = "1999";
 
 console.log(Number("1999"));
-console.log(parseInt(year)); 
+
+console.log(year.toString());
+// console.log(parseInt(year)); 
 
 
-console.log(typeof(year));
-console.log(typeof(parseInt(year))); 
+// console.log(typeof(year));
+// console.log(typeof(parseInt(year))); 
 
 
 
@@ -185,43 +187,45 @@ Use the game function below to do the following:
   HINT: While you can complete this with only conditionals based on strings, it may help to equate choice to a number when using Math.random()
 */
 //Computer selection 0 1 2 
-
-
-function game(user, computer){
-  let computer = Math.floor(Math.random() *  3)
-
-  if(computer === 0){
-    return "rock"
-  } else if(computer === 1) {
-    return "paper"
-  }else if (computer === 2) {
-    return "scissors"
-  }
-
-  
-  if (user === "rock" && computer === "scissors"){
-    return "you win"
-  }
-  else if (user === "paper" && computer === "rock"){
-    return "you win!"
-  }
-  else if (user === "scissors" && computer === "paper"){
-    return "you win!"
-  }
-  else if (user === computer){
-    return "tie!"
-  }
-  else{
-    return "you lose!"
-  }
-  
-  if (user === "scissors" && computer === "paper"){
-    return "you lose"
-  }
-  else {
-
-  }
+function game(/*add your code here*/){
+  /*add your code here*/
 }
+
+// function game(user, computer){
+//   let computer = Math.floor(Math.random() *  3)
+
+//   if(computer === 0){
+//     return "rock"
+//   } else if(computer === 1) {
+//     return "paper"
+//   }else if (computer === 2) {
+//     return "scissors"
+//   }
+
+  
+//   if (user === "rock" && computer === "scissors"){
+//     return "you win"
+//   }
+//   else if (user === "paper" && computer === "rock"){
+//     return "you win!"
+//   }
+//   else if (user === "scissors" && computer === "paper"){
+//     return "you win!"
+//   }
+//   else if (user === computer){
+//     return "tie!"
+//   }
+//   else if{
+//     return "you lose!"
+//   }
+  
+//   (user === "scissors" && computer === "paper"){
+//     return "you lose"
+//   }
+//   else {
+
+//   }
+// }
 
 
 
@@ -236,10 +240,10 @@ Using the miles function below do the following:
   3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-    /*add your code here*/
-  }
-
+function miles(km){
+    return km * 0.621371
+}
+console.log(miles(10))
 
 
 //Task 5b - Feet to CM
@@ -251,10 +255,10 @@ Using the feet function below do the following:
 */
 
 
-function convertToFeet(cm){
+function feet(cm){
     return cm / 30.48
   }
-console.log(convertToFeet(100))
+console.log(feet(100))
 
 
 
@@ -269,11 +273,16 @@ Using the annoyingSong function below do the following:
 */
 
 
-function annoyingSong(bottles){
-      for (let i = bottles;  i > 0; i--)
-      return (`${i} bottles of soda on the wall, ${i} bottles of soda, take one down pass it around, ${i-1} bottles of soda on the wall`);
+// function annoyingSong(bottles){
+//       for (let i = bottles;  i > 0; i--)
+//       return (`${i} bottles of soda on the wall, ${i} bottles of soda, take one down pass it around, ${i-1} bottles of soda on the wall`);
+//   }
+//   console.log(annoyingSong(99));
+
+function annoyingSong(){
+
   }
-  console.log(annoyingSong(99));
+
 
 
 
