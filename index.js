@@ -213,7 +213,7 @@ function game(user, computer){
         return 'you lose!'
       }
     }
-    
+
     else if (user === 'scissors') {
       if (computer === 'rock') {
         return 'you lose!'
@@ -271,15 +271,12 @@ Using the annoyingSong function below do the following:
 */
 
 
-// function annoyingSong(bottles){
-//       for (let i = bottles;  i > 0; i--)
-//       return (`${i} bottles of soda on the wall, ${i} bottles of soda, take one down pass it around, ${i-1} bottles of soda on the wall`);
-//   }
-//   console.log(annoyingSong(99));
+function annoyingSong(bottles){
+      for (let i = bottles;  i > 0; i--)
+      return (`${i} bottles of soda on the wall, ${i} bottles of soda, take one down pass it around ${i-1} bottles of soda on the wall`);
+  }
+  console.log(annoyingSong(99));
 
-function annoyingSong(){
-
-}
 
 
 
