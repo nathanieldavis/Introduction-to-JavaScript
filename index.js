@@ -136,34 +136,34 @@ Use the hungryDog function and feeding requirements below to do the following:
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(weight, age) {
-  //Adult Dog
-  if (age >= 1 && weight <= 5) {
-    return weight * 0.5
-  }
-    else if (age >=1 && weight >= 6 && weight <= 10) {
-      return weight * 0.4
-    }
+// function hungryDog(weight, age) {
+//   //Adult Dog
+//   if (age >= 1 && weight <= 5) {
+//     return weight * 0.5
+//   }
+//     else if (age >=1 && weight >= 6 && weight <= 10) {
+//       return weight * 0.4
+//     }
 
-    else if (age >=1 && weight >= 11 && weight <= 15) {
-      return weight * 0.03;
-    }
+//     else if (age >=1 && weight >= 11 && weight <= 15) {
+//       return weight * 0.03;
+//     }
 
-    else if (age >=1 && weight > 15) {
-      return weight * 0.02;
-    }
-  //Puppy
-  if (age >= 2 / 12 && age <= 4 / 12) {
-    return weight * .1;
-  }  
-    else if (age >= 4 / 12 && age <= 7 / 12) {
-      return weight * .05
-    }
-    else if (age >= 7 / 12 && age <= 12 / 12) {
-      return weight * .04
-    }
-}
-console.log(hungryDog(15, 1));
+//     else if (age >=1 && weight > 15) {
+//       return weight * 0.02;
+//     }
+//   //Puppy
+//   if (age >= 2 / 12 && age <= 4 / 12) {
+//     return weight * .1;
+//   }  
+//     else if (age >= 4 / 12 && age <= 7 / 12) {
+//       return weight * .05
+//     }
+//     else if (age >= 7 / 12 && age <= 12 / 12) {
+//       return weight * .04
+//     }
+// }
+// console.log(hungryDog(15, 1));
 
 
 
@@ -186,14 +186,14 @@ Use the game function below to do the following:
   
   HINT: While you can complete this with only conditionals based on strings, it may help to equate choice to a number when using Math.random()
 */
-//Computer selection 0 1 2 
-function game(/*add your code here*/){
-  /*add your code here*/
-}
+// Computer selection 0 1 2 
+// function game(/*add your code here*/){
+//   /*add your code here*/
+// }
 
 // function game(user, computer){
 //   let computer = Math.floor(Math.random() *  3)
-
+  
 //   if(computer === 0){
 //     return "rock"
 //   } else if(computer === 1) {
@@ -206,7 +206,7 @@ function game(/*add your code here*/){
 //   if (user === "rock" && computer === "scissors"){
 //     return "you win"
 //   }
-//   else if (user === "paper" && computer === "rock"){
+//   if (user === "paper" && computer === "rock"){
 //     return "you win!"
 //   }
 //   else if (user === "scissors" && computer === "paper"){
@@ -215,18 +215,18 @@ function game(/*add your code here*/){
 //   else if (user === computer){
 //     return "tie!"
 //   }
-//   else if{
+//   else if {
 //     return "you lose!"
 //   }
   
-//   (user === "scissors" && computer === "paper"){
+
+//   if (user === "scissors" && computer === "paper"){
 //     return "you lose"
 //   }
-//   else {
+//   else if() {
 
 //   }
 // }
-
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -243,7 +243,7 @@ Using the miles function below do the following:
 function miles(km){
     return km * 0.621371
 }
-console.log(miles(10))
+console.log(miles(10));
 
 
 //Task 5b - Feet to CM
@@ -280,7 +280,6 @@ Using the annoyingSong function below do the following:
 //   console.log(annoyingSong(99));
 
 function annoyingSong(){
-
   }
 
 
