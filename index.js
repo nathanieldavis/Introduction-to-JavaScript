@@ -239,7 +239,6 @@ Using the miles function below do the following:
   2. Convert the number of kiolmeters received to miles
   3. Return the number of miles
 */
-
 function miles(km){
     return km * 0.621371
 }
