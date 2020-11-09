@@ -254,7 +254,6 @@ Using the feet function below do the following:
   3. Return number of feet
 */
 
-
 function feet(cm){
     return cm / 30.48
   }
@@ -281,7 +280,7 @@ Using the annoyingSong function below do the following:
 
 function annoyingSong(){
 
-  }
+}
 
 
 
