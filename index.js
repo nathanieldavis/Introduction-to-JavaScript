@@ -40,13 +40,14 @@ Do the following:
   HINT: no function required
 */
 
-var legalVotingAge = 18;
+let x = 8;
+let y = 18;
 
-var canIVote = (legalVotingAge >= 18) ? "You can Vote! " : "You can't Vote!"
+if (y > 14) {
+  x = y * x;
+}
 
-console.log(canIVote);
-//right = truthy left = falsy 
-//Study conditionals
+console.log(x)
 
 
 
@@ -136,34 +137,34 @@ Use the hungryDog function and feeding requirements below to do the following:
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-// function hungryDog(weight, age) {
-//   //Adult Dog
-//   if (age >= 1 && weight <= 5) {
-//     return weight * 0.5
-//   }
-//     else if (age >=1 && weight >= 6 && weight <= 10) {
-//       return weight * 0.4
-//     }
+function hungryDog(weight, age) {
+  //Adult Dog
+  if (age >= 1 && weight <= 5) {
+    return weight * 0.5
+  }
+    else if (age >=1 && weight >= 6 && weight <= 10) {
+      return weight * 0.4
+    }
 
-//     else if (age >=1 && weight >= 11 && weight <= 15) {
-//       return weight * 0.03;
-//     }
+    else if (age >=1 && weight >= 11 && weight <= 15) {
+      return weight * 0.03;
+    }
 
-//     else if (age >=1 && weight > 15) {
-//       return weight * 0.02;
-//     }
-//   //Puppy
-//   if (age >= 2 / 12 && age <= 4 / 12) {
-//     return weight * .1;
-//   }  
-//     else if (age >= 4 / 12 && age <= 7 / 12) {
-//       return weight * .05
-//     }
-//     else if (age >= 7 / 12 && age <= 12 / 12) {
-//       return weight * .04
-//     }
-// }
-// console.log(hungryDog(15, 1));
+    else if (age >=1 && weight > 15) {
+      return weight * 0.02;
+    }
+  //Puppy
+  if (age >= 2 / 12 && age <= 4 / 12) {
+    return weight * .1;
+  }  
+    else if (age >= 4 / 12 && age <= 7 / 12) {
+      return weight * .05
+    }
+    else if (age >= 7 / 12 && age <= 12 / 12) {
+      return weight * .04
+    }
+}
+console.log(hungryDog(15, 1));
 
 
 
@@ -186,10 +187,7 @@ Use the game function below to do the following:
   
   HINT: While you can complete this with only conditionals based on strings, it may help to equate choice to a number when using Math.random()
 */
-// Computer selection 0 1 2 
-// function game(/*add your code here*/){
-//   /*add your code here*/
-// }
+
 
 // function game(user, computer){
 //   let computer = Math.floor(Math.random() *  3)
@@ -203,30 +201,24 @@ Use the game function below to do the following:
 //   }
 
   
-//   if (user === "rock" && computer === "scissors"){
-//     return "you win"
+//   if (user === "rock" && computer === "scissors" ||
+//       user === "scissors" && computer === "paper" ||
+//       user === "paper" && computer === "rock") {
+//     return "You win!"
 //   }
-//   if (user === "paper" && computer === "rock"){
-//     return "you win!"
+//   else if (computer === "rock" && user === "scissors" ||
+//           computer === "scissors" && user ==="paper" ||
+//           computer === "paper" && user === "rock"){
+//     return "You lost!"
 //   }
-//   else if (user === "scissors" && computer === "paper"){
-//     return "you win!"
+//   else {
+//     return "It's a tie";
 //   }
-//   else if (user === computer){
-//     return "tie!"
-//   }
-//   else if {
-//     return "you lose!"
-//   }
-  
 
-//   if (user === "scissors" && computer === "paper"){
-//     return "you lose"
-//   }
-//   else if() {
-
-//   }
 // }
+
+// game(rock, paper);
+
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -300,9 +292,23 @@ Using the grade function below do the following:
   below 60 = F
 */
   
-function grade(/*add your code here*/){
-    /*add your code here*/
+function grade(studentScore){
+    if (studentScore >= 90 && studentScore <= 100 ){
+      return "you got an A";
+    }
+    else if (studentScore >= 80 && studentScore <= 89 ){
+      return "you got a B";
+    }
+    else if (studentScore >= 70 && studentScore <= 79 ){
+      return "you got a C";
+    }
+    else if (studentScore >= 60 && studentScore <= 69 ){
+      return "you got a D";
+    }
+    else if (studentScore < 60) { return " you got an F";}
   }
+
+console.log(grade(90));
   
   
   
@@ -338,7 +344,7 @@ export default{
     multiply,
     dogYears,
     hungryDog,
-    game,
+    // game,
     miles,
     feet,
     annoyingSong,
