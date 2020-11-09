@@ -189,35 +189,43 @@ Use the game function below to do the following:
 */
 
 
-// function game(user, computer){
-//   let computer = Math.floor(Math.random() *  3)
-  
-//   if(computer === 0){
-//     return "rock"
-//   } else if(computer === 1) {
-//     return "paper"
-//   }else if (computer === 2) {
-//     return "scissors"
-//   }
+function game(user, computer){
+    if (user === 'rock') {
+      if (computer === 'rock') {
+        return "it's a tie"
+      }
+      if (computer === 'paper') {
+        return 'you lose!'
+      }
+      if (computer === 'scissors') {
+        return 'you win!'
+      }
+    }
 
-  
-//   if (user === "rock" && computer === "scissors" ||
-//       user === "scissors" && computer === "paper" ||
-//       user === "paper" && computer === "rock") {
-//     return "You win!"
-//   }
-//   else if (computer === "rock" && user === "scissors" ||
-//           computer === "scissors" && user ==="paper" ||
-//           computer === "paper" && user === "rock"){
-//     return "You lost!"
-//   }
-//   else {
-//     return "It's a tie";
-//   }
-
-// }
-
-// game(rock, paper);
+    else if (user === 'paper') {
+      if (computer === 'rock') {
+        return 'you win!'
+      }
+      if (computer === 'paper') {
+        return "it's a tie";
+      }
+      if (computer === 'scissors') {
+        return 'you lose!'
+      }
+    }
+    
+    else if (user === 'scissors') {
+      if (computer === 'rock') {
+        return 'you lose!'
+      }
+      if (computer === 'paper') {
+        return 'you win!';
+      }
+      if (computer === 'scissors') {
+        return "it's a tie";
+      }
+    }
+}
 
 
 
@@ -344,7 +352,7 @@ export default{
     multiply,
     dogYears,
     hungryDog,
-    // game,
+    game,
     miles,
     feet,
     annoyingSong,
