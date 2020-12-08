@@ -18,16 +18,16 @@ Do the following:
   HINT: no function required
 */
 
-var votingAge = 18;
+// var votingAge = 18;
 
-if (votingAge >= 18) {
-  console.log(true);
-}
-else {
-  console.log(false);
-}
+// if (votingAge >= 18) {
+//   console.log(true);
+// }
+// else {
+//   console.log(false);
+// }
 
-console.log(votingAge);
+// console.log(votingAge);
 
 
 /*
@@ -40,14 +40,14 @@ Do the following:
 
   HINT: no function required
 */
-let var1 = 8;
-let var2 = 18;
+// let var1 = 8;
+// let var2 = 18;
 
-if (var2 > 14) {
-  var1 = var2 * var1;
-}
+// if (var2 > 14) {
+//   var1 = var2 * var1;
+// }
 
-console.log(var1)
+// console.log(var1)
 
 
 
@@ -63,9 +63,9 @@ Do the following:
   HINT: look up the Number method
 */
 
-var year = "1999"
+// var year = "1999"
 
-console.log(parseInt(year));
+// console.log(parseInt(year));
 
 /*
 Task 1d - Multiply
@@ -76,9 +76,11 @@ Do the following:
   3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
-  }
+function multiply(a, b){
+  return a * b ;
+}
+
+multiply(5, 7);
 
 
 
