@@ -12,10 +12,10 @@ returns a value, that value will be logged to the console.  An example of this w
 Task 1a - Voting Age
 
 Do the following:   
-   1. Make a variable called votingAge and give it a value
-   2. Return true if age is 18 or higher
+  1. Make a variable called votingAge and give it a value
+  2. Return true if age is 18 or higher
 
-   HINT: no function required
+  HINT: no function required
 */
 
 var votingAge = 18;
@@ -34,13 +34,20 @@ console.log(votingAge);
 Task 1b - Values
 
 Do the following:   
-   1. Declare two variables and assign them values
-   2. Use a conditional to change the value of the 1st variable based on the value assigned to the 2nd variable
-   3. Return the new value of the 1st variable
+  1. Declare two variables and assign them values
+  2. Use a conditional to change the value of the 1st variable based on the value assigned to the 2nd variable
+  3. Return the new value of the 1st variable
 
-   HINT: no function required
+  HINT: no function required
 */
+let var1 = 8;
+let var2 = 18;
 
+if (var2 > 14) {
+  var1 = var2 * var1;
+}
+
+console.log(var1)
 
 
 
@@ -49,11 +56,11 @@ Do the following:
 Task 1c - Convert Strings to Numbers
 
 Do the following:   
-   1. Declare a string type variable with the value of "1999"
-   2. Convert the string value of "1999" to a integer value of 1999
-   3. Return the result
+  1. Declare a string type variable with the value of "1999"
+  2. Convert the string value of "1999" to a integer value of 1999
+  3. Return the result
 
-   HINT: look up the Number method
+  HINT: look up the Number method
 */
 
 
@@ -61,11 +68,11 @@ Do the following:
 
 /*
 Task 1d - Multiply
- 
+
 Do the following:   
-   1. Invoke the multiply function below and pass it two numbers
-   2. Receive the numbers in the parameters: a and b
-   3. Multiply a and b and return the answer
+  1. Invoke the multiply function below and pass it two numbers
+  2. Receive the numbers in the parameters: a and b
+  3. Multiply a and b and return the answer
 */
 
 function multiply(/*add your code here*/){
@@ -79,9 +86,9 @@ function multiply(/*add your code here*/){
 //Age in Dog years
 /*
 Do the following:
-   1. Invoke the dogYears function below and pass an age value to it
-   2. Use the received value to calculate the age in dog years (1 human year is equal to 7 dog years)
-   3. Return the newly calculated age
+  1. Invoke the dogYears function below and pass an age value to it
+  2. Use the received value to calculate the age in dog years (1 human year is equal to 7 dog years)
+  3. Return the newly calculated age
 */
 
 function dogYears(/*add your code here*/){
@@ -104,15 +111,15 @@ Use the hungryDog function and feeding requirements below to do the following:
   Feeding Requirements:
 
   Adult Dogs 1 year and older 
-     up to 5 lbs - 5% of their body weight
-     6 - 10 lbs - 4% of their body weight 
-     11 - 15 lbs - 3% of their body weight 
-     > 15lbs - 2% of their body weight 
+    up to 5 lbs - 5% of their body weight
+    6 - 10 lbs - 4% of their body weight 
+    11 - 15 lbs - 3% of their body weight 
+    > 15lbs - 2% of their body weight 
 
-  Puppies less than 1 year
-     2 - 4 months 10% of their body weight
-     4 - 7 months 5% of their body weight 
-     7 - 12 months 4% of their body weight
+Puppies less than 1 year
+    2 - 4 months 10% of their body weight
+    4 - 7 months 5% of their body weight 
+    7 - 12 months 4% of their body weight
     
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
@@ -133,9 +140,9 @@ Use Math.random to determine the computers choice (Math.random gives a random nu
 Use the game function below to do the following:
   1. Receive 2 parameters the user's choice and the computer's choice
   2. Return whether the user won, lost, or tied based on these rules of the game described below
-   - win should return "you win!"
-   - lose should return "you lose!"
-   -tie should return "it's a tie"
+  - win should return "you win!"
+  - lose should return "you lose!"
+  -tie should return "it's a tie"
   
   RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors | Or there's a tie
   
@@ -176,7 +183,7 @@ Using the feet function below do the following:
 function feet(/*add your code here*/){
     /*add your code here*/
   }
- 
+
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -202,11 +209,11 @@ Using the grade function below do the following:
   1. Receive a score out of 100 
   2. Return the corresponding letter grade following this grade scale:
 
-   90-100 = A 
-   80-89 = B 
-   70-79 = C 
-   60-69 =  D 
-   below 60 = F
+  90-100 = A 
+  80-89 = B 
+  70-79 = C 
+  60-69 =  D 
+  below 60 = F
 */
   
 function grade(/*add your code here*/){
