@@ -94,9 +94,13 @@ Do the following:
   3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-    /*add your code here*/
+function dogYears(age) {
+  var dogYears = 7*age;
+  // console.log("Your doge is " + dogYears + " years old in dog years!");
+  return dogYears;
 }
+
+console.log(dogYears(3));
 
 
 
