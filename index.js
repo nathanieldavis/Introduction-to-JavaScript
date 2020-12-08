@@ -63,8 +63,9 @@ Do the following:
   HINT: look up the Number method
 */
 
+var year = "1999"
 
-
+console.log(parseInt(year));
 
 /*
 Task 1d - Multiply
